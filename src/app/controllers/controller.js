@@ -141,13 +141,13 @@ class controller{
           const transporter = nodemailer.createTransport({
             service: "Gmail",
             auth: {
-              user: "lotiendat202@gmail.com",
-              pass: "jqyjyavzvlqgkfhn",
+              // user: "",
+              // pass:"" ,
             },
           });
       
           const mailOptions = {
-            from: "lotiendat202@gmail.com",
+            // from: "",
             to: email,
             subject: "Reset Password Confirmation Code",
             text: `Your reset confirmation code is: ${resetToken}`,
